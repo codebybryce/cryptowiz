@@ -230,7 +230,7 @@ const Header = styled.header`
   top: 0 !important;
   left: 0;
   width: 100%;
-  height: 6vh;
+  height: 3.5rem;
   padding: 1rem;
   margin-bottom: 0.5rem;
   display: -webkit-box;
