@@ -1,0 +1,79 @@
+:root {
+  --main-background: linear-gradient(79.6deg, #2e2a3c 7.24%, #383052 97.37%);
+  --secondary-color: hsla(165, 97%, 62%, 1);
+  --font-color: hsla(253, 5%, 88%, 1);
+  --purple-one: hsl(276, 72%, 41%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: var(--main-background);
+  color: var(--font-color);
+}
+
+h1 {
+  font-size: clamp(1.5rem, 1.1053rem + 2.1053vw, 3rem);
+}
+h2,
+h3 {
+  font-size: clamp(1rem, 0.6711rem + 1.7544vw, 2.25rem);
+}
+html,
+p,
+button {
+  font-size: 1rem;
+  /* font-size: clamp(0.875rem, 0.8092rem + 0.3509vw, 1.125rem); */
+}
+
+input[type="text"],
+input[type="number"],
+input {
+  font-size: 16px;
+}
+
+input {
+  border: none;
+  background: none;
+  color: var(--font-color);
+  padding: 1rem;
+}
+
+input,
+textarea {
+  border: 1px solid rgba(212, 212, 212, 0.2) !important;
+}
+
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--purple-one);
+  outline-offset: -2px;
+  border: none;
+  transition: 500ms;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.styled-input {
+  position: relative;
+  background: rgba(0, 0, 0, 0.24);
+  width: 100%;
+  margin: 0.25rem;
+  transition: 300ms;
+  padding: 1rem 1rem 1rem 2rem;
+}
